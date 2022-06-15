@@ -24,7 +24,7 @@ function setup(){
     selectedSpeed.option('Devagar (performance alta)',6000)
     selectedSpeed.selected(6000)
     selectedSpeed.position(20, 60)
-    instructions = createDiv('Use o scroll para dar zoom, e as setas do teclado para mover a câmera')
+    instructions = createDiv('Use o scroll para dar zoom <br/>e as setas para mover a câmera')
     instructions.addClass('instr')
 }
 
