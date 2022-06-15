@@ -18,6 +18,14 @@ function setup(){
         selectedEntity.option(entity.name,everyEntity.indexOf(entity))
     })
     selectedEntity.changed(changeview)
+    selectedSpeed = createSelect()
+    selectedSpeed.option('Rápido (performance baixa)',20000)
+    selectedSpeed.option('Médio (performance média)',13000)
+    selectedSpeed.option('Devagar (performance alta)',6000)
+    selectedSpeed.selected(6000)
+    selectedSpeed.position(20, 60)
+    instructions = createDiv('Use o scroll para dar zoom, e as setas do teclado para mover a câmera')
+    instructions.addClass('instr')
 }
 
 function changeview(){
@@ -53,8 +61,9 @@ function draw(){
         cameraActive = false
         Ycamera+=30
     }
+    let speed = selectedSpeed.value()
     everyEntity.forEach(entity => {
-        for(i=0; i<=3000; i++){
+        for(i=0; i<=speed; i++){
             let totalxacceleration = 0
             let totalyacceleration = 0
             everyEntity.forEach(secondentity => {

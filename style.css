@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 html, body{
     margin: 0;
     padding: 0;
+}
+
+.instr{
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+select{
+    font-family: 'Roboto Condensed', sans-serif;
 }
