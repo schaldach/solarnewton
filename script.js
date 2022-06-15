@@ -1,5 +1,3 @@
-let myCanvas
-let selectedEntity
 let Xcamera = 0
 let Ycamera = 0
 let XcentralView = 0
@@ -56,7 +54,7 @@ function draw(){
         Ycamera+=30
     }
     everyEntity.forEach(entity => {
-        for(i=0; i<=13000; i++){
+        for(i=0; i<=3000; i++){
             let totalxacceleration = 0
             let totalyacceleration = 0
             everyEntity.forEach(secondentity => {
